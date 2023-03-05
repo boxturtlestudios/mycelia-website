@@ -5,19 +5,11 @@
     box-sizing: border-box;
 }
 
-
 section.hero {
+    position: sticky;
+    top: 0vh;
+    bottom: 100vh;
     height: 100vh;
-    width: 100vw;
-    overflow-x: hidden;
-}
-
-section.hero:hover div.game {
-    transform: scale(1.2);
-}
-
-section.hero:hover div.leaves {
-    transform: scale(1.6);
 }
 
 .hero div.leaves {
@@ -26,8 +18,9 @@ section.hero:hover div.leaves {
     height: 100%;
     width: 100%;
     background: radial-gradient(47.41% 26.64% at 50% 50%, rgba(0, 0, 0, 0.056) 0%, rgba(4, 6, 46, 0.2) 100%), url("ForestCircle.png");
-    background-size: cover;
+    background-size: 100%;
     background-position: center 30%;
+    background-repeat: no-repeat;
 }
 
 .hero div.game {
@@ -36,8 +29,9 @@ section.hero:hover div.leaves {
     height: 100%;
     width: 100%;
     background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.14) 0%, rgba(0, 0, 0, 0.2) 100%), url("GameScreenshot.png");
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero img.logo {
