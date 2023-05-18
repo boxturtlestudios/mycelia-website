@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat&family=Open+Sans&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -29,12 +29,14 @@ a {
 nav {
     width: 100%;
     position: fixed;
-    top: 24px;
+    /*top: 24px;*/
     z-index: 1;
     color: white;
+    height: 72px;
 }
 
 nav ul {
+    margin-top: 24px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -112,6 +114,62 @@ section + section {
     height: 100vh;
 }
 
-footer {
-    
+.features {
+    padding-top: 200px;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.feature {
+    max-width: 1200px;
+    width: 80%;
+    margin: 64px auto;
+    height: 148px;
+}
+
+.feature h3 {
+    font-size: 1.4rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.feature img {
+    width: 148px;
+    float: left;
+    margin-right: 40px;
+}
+
+.feature:nth-child(3) img {
+    width: 512px;
+}
+
+.feature:nth-child(3) {
+    height: 300px;
+}
+
+.feature p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #D9D9D9;
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.animate {
+    opacity: 1;
+    transform: translateX(0px);
 }
