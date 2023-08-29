@@ -2,55 +2,77 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mycelia</title>
 
-    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Montserrat&family=Open+Sans&display=swap');
 
-    <title>Mycelia - Home</title>
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        main {
+            height: 100vh;
+            background-image: radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5)), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("GameScreenshot.png");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        div {
+            max-width: 80%;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            line-height: 1.8;
+            color: white;
+            max-width: 400px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        a {
+            width: fit-content;
+            margin: auto;
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            color: white;
+            text-decoration: none;
+            margin-top: 26px;
+            padding: 12px 24px;
+            border: 2px white solid;
+            border-radius: 24px;
+
+            transition: all 0.1s ease-in-out;
+        }
+
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+    </style>
 </head>
 <body>
-    <p id="scrollIndicator">%</p>
-    <nav id="nav"><ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#gameplay">Gameplay</a></li>
-        <li><a href="#development">Development</a></li>
-    </ul></nav>
-    <section class="about" id="about">
-        <div class="game" id="gameImage"></div>
-        <div class="leaves" id="leavesImage"></div>
-        <img class="logo" id="logo" src="TitleWhite.png" alt="Mycelia Logo">
-        <div class="info" id="about-info">
-            <h2>About</h2>
-            <p>A small farming farm set on the island of Mycelia. Explore the island and uncover the secrets of agriculture. Cultivate the unique environment and expand your farm to the undiscovered parts of the island. Sell your crops and goods at the seaside market to make a profit.</p>
+    <main>
+        <div>
+            <img src="TitleWhite.png" alt="Mycelia Logo">
+            <p>Full game site is under construction! Please check back soon.</p>
+            <a href="https://boxturtlestudios.com/games/mycelia/">Return to Game Summary</a>
         </div>
-    </section>
-    <section class="features" id="features">
-        <h2>Features</h2>
-        <div class="features-list">
-            <div class="feature slide-in">
-                <img src="Assets/Carrot.png">
-                <h3>Farming</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae, illum debitis recusandae incidunt perspiciatis dolore ad laborum quos asperiores ab dolorem molestias officiis labore hic sint cupiditate error itaque!</p>
-            </div>
-            <div class="feature slide-in">
-                <img src="Assets/Cake.png">
-                <h3>Cooking</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae, illum debitis recusandae incidunt perspiciatis dolore ad laborum quos asperiores ab dolorem molestias officiis labore hic sint cupiditate error itaque!</p>
-            </div>
-            <div class="feature slide-in">
-                <img src="Assets/Book.png">
-                <h3>Farmer's Almanac</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae, illum debitis recusandae incidunt perspiciatis dolore ad laborum quos asperiores ab dolorem molestias officiis labore hic sint cupiditate error itaque!</p>
-            </div>
-            <div class="feature slide-in">
-                <img src="Assets/FishingRod.png">
-                <h3>Fishing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quae, illum debitis recusandae incidunt perspiciatis dolore ad laborum quos asperiores ab dolorem molestias officiis labore hic sint cupiditate error itaque!</p>
-            </div>
-        </div>
-    </section>
-    <script src="script.js"></script>
+    </main>
 </body>
 </html>
